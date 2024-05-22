@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 import static lox.TokenType.*;
 
-public class Scanner {
+public class Lexer {
     private final String source;
     private final List<Token> tokens = new ArrayList<>();
 
@@ -36,7 +36,7 @@ public class Scanner {
     private int curr = 0;
     private int line = 1;
 
-    public Scanner(String source) {
+    public Lexer(String source) {
         this.source = source;
     }
 
