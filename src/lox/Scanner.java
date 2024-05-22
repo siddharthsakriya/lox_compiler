@@ -174,7 +174,6 @@ public class Scanner {
             return;
         }
         addToken(IDENTIFIER);
-        return;
     }
 
 }
