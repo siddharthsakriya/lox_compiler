@@ -79,7 +79,7 @@ public class Lexer {
             default:
                 if (isDigit(c)){
                     num();
-                    addToken(STRING, Double.parseDouble(source.substring(start, curr)));
+                    addToken(NUMBER, Double.parseDouble(source.substring(start, curr)));
                     break;
                 }
                 else if (isAlpha(c)){
